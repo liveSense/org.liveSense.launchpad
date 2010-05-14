@@ -149,7 +149,13 @@
             <artifactId>org.apache.felix.http.whiteboard</artifactId>
             <version>2.0.4</version>
         </bundle>
-    </startLevel>
+        <bundle>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.http.bridge</artifactId>
+            <version>2.0.4</version>
+        </bundle>
+
+	</startLevel>
     <startLevel level="1">
         <bundle>
             <groupId>org.apache.sling</groupId>
@@ -382,6 +388,12 @@
 			<artifactId>org.liveSense.scripting.jsp.taglib.json</artifactId>
 			<version>0.5-SNAPSHOT</version>
 		</bundle>
+		<bundle>
+			<groupId>org.liveSense</groupId>
+			<artifactId>org.liveSense.sun.misc</artifactId>
+			<version>1.0.0</version>
+		</bundle>
+
 		<bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.utils</artifactId>
