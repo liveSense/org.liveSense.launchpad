@@ -25,7 +25,7 @@
         <bundle>
             <groupId>org.apache.sling</groupId>
             <artifactId>org.apache.sling.commons.osgi</artifactId>
-            <version>2.0.5-SNAPSHOT</version>
+            <version>2.0.6</version>
         </bundle>
         <bundle>
             <groupId>org.apache.sling</groupId>
@@ -101,7 +101,7 @@
         <bundle>
             <groupId>org.apache.sling</groupId>
             <artifactId>org.apache.sling.fsresource</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1-SNAPSHOT</version>
         </bundle>
 
         <!-- Launchpad initial content -->
@@ -172,12 +172,17 @@
         <bundle>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.webconsole</artifactId>
-            <version>2.0.7-SNAPSHOT</version>
+            <version>3.0.0</version>
         </bundle>
         <bundle>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.webconsole.plugins.event</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.2</version>
+        </bundle>
+        <bundle>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.webconsole.plugins.memoryusage</artifactId>
+            <version>1.0.0</version>
         </bundle>
         <bundle>
             <groupId>org.apache.sling</groupId>
@@ -222,15 +227,10 @@
             <artifactId>org.apache.felix.scr</artifactId>
             <version>1.4.0</version>
         </bundle>
-        <bundle>
+		<bundle>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.metatype</artifactId>
             <version>1.0.4</version>
-        </bundle>
-        <bundle>
-            <groupId>org.apache.felix</groupId>
-            <artifactId>org.apache.felix.configadmin</artifactId>
-            <version>1.2.4</version>
         </bundle>
 
 	</startLevel>
