@@ -7,7 +7,7 @@
 	<artifactId>org.liveSense.war</artifactId>
 	<packaging>war</packaging>
 
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>liveSense WAR / JAR Bundle</name>
 	<description>liveSense WAR and JAR launchpad bundle</description>
 
@@ -41,6 +41,8 @@
         -->
         <jetty.sling.context>/</jetty.sling.context>
 
+		<staging.dir>${project.build.directory}\staging</staging.dir>
+    	<izpack.standalone.compiler.version>4.3.2</izpack.standalone.compiler.version>
     </properties>
 
     <build>
@@ -48,6 +50,11 @@
             <plugin>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>maven-launchpad-plugin</artifactId>
+                <configuration>
+                            <jarWebSupport>
+                                <version>2.0.4</version>
+                            </jarWebSupport>
+                </configuration>
                 <executions>
                     <execution>
                         <id>prepare-package-war</id>
@@ -109,8 +116,8 @@
                             <goal>create-bundle-jar</goal>
                         </goals>
                         <configuration>
-							<includeDefaultBundles>false</includeDefaultBundles>
-							<resources>
+			    <includeDefaultBundles>false</includeDefaultBundles>
+			    <resources>
                                 <!-- Legal stuff -->
                                 <resource>
                                     <directory>${basedir}</directory>
@@ -149,14 +156,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <configuration>
-                    <descriptors>
-                        <descriptor>src/main/assembly/bin.xml</descriptor>
-                    </descriptors>
-                </configuration>
-            </plugin>
 
             <plugin>
                 <groupId>org.mortbay.jetty</groupId>
@@ -194,6 +193,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
+                <version>2.0.2</version>
                 <configuration>
                     <packagingExcludes>WEB-INF/classes/resources/**</packagingExcludes>
                     <webResources>
@@ -226,6 +226,55 @@
                     <target>1.5</target>
                 </configuration>
             </plugin>
+
+
+      <!-- Used to configure IzPack installer -->
+      <plugin>
+        <groupId>org.codehaus.izpack</groupId>
+        <artifactId>izpack-maven-plugin</artifactId>
+        <version>1.0-alpha-5</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>izpack</goal>
+            </goals>
+            <configuration>
+              <izpackBasedir>${staging.dir}</izpackBasedir>
+            </configuration>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>org.codehaus.izpack</groupId>
+            <artifactId>izpack-standalone-compiler</artifactId>
+            <version>${izpack.standalone.compiler.version}</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.4.2</version>
+        <executions>
+          <execution>
+            <id>copy-resources</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <encoding>UTF-8</encoding>
+              <outputDirectory>${staging.dir}</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>src/main/resources</directory>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
         </plugins>
     </build>
     <reporting>
@@ -247,7 +296,7 @@
         <dependency>
             <groupId>org.apache.sling</groupId>
             <artifactId>org.apache.sling.launchpad.base</artifactId>
-            <version>2.1.1-SNAPSHOT</version>
+            <version>2.1.0</version>
             <classifier>webapp</classifier>
             <type>war</type>
             <scope>runtime</scope>
@@ -255,7 +304,7 @@
 	<dependency>
             <groupId>org.apache.sling</groupId>
             <artifactId>org.apache.sling.launchpad.base</artifactId>
-            <version>2.1.1-SNAPSHOT</version>
+            <version>2.1.0</version>
             <classifier>app</classifier>
             <scope>provided</scope>
         </dependency>
@@ -304,6 +353,11 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
+        </repository>
+
+        <repository>
+                <id>Apache Snapshots</id>
+                <url>https://repository.apache.org/content/repositories/snapshots</url>
         </repository>
     </repositories>
 </project>
