@@ -375,7 +375,7 @@
 			<version>1.0.0</version>
 		</bundle>
 		<bundle>
-			<artifactId>org.liveSense.servlet.gwt-rpc</artifactId>
+			<artifactId>org.liveSense.servlet.gwtrpc</artifactId>
                         <groupId>org.liveSense</groupId>
 			<version>1.0.0</version>
 		</bundle>
