@@ -8,8 +8,8 @@
       <version>1-SNAPSHOT</version>
   </parent>
   <scm>
-      <connection>scm:git:git://github.com/liveSense/org.liveSense.launchpad</connection>
-      <developerConnection>scm:git:git://github.com/liveSense/org.liveSense.launchpad</developerConnection>
+      <connection>scm:git:git://github.com/liveSense/org.liveSense.launchpad.git</connection>
+      <developerConnection>scm:git:git://github.com/liveSense/org.liveSense.launchpad.git</developerConnection>
       <url>https://github.com/liveSense/org.liveSense.launchpad</url>
   </scm>  
 
@@ -21,7 +21,7 @@
 	<artifactId>org.liveSense.launchpad</artifactId>
 	<packaging>war</packaging>
 
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>liveSense WAR / JAR Bundle</name>
 	<description>liveSense WAR and JAR launchpad bundle</description>
 

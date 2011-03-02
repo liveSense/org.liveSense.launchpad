@@ -138,7 +138,7 @@
         <bundle>
             <groupId>org.liveSense</groupId>
             <artifactId>org.liveSense.content.initial</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1-SNAPSHOT</version>
         </bundle>
 
         <!-- scripting -->
@@ -190,19 +190,19 @@
             <artifactId>org.apache.aries.jmx.core</artifactId>
             <version>0.3</version>
         </bundle>
-    </startLevel> --> 
+    </startLevel> 
     <startLevel level="1">
         <bundle>
             <groupId>org.apache.sling</groupId>
             <artifactId>org.apache.sling.commons.log</artifactId>
             <version>2.1.2</version>
         </bundle>
-    </startLevel> -->
+    </startLevel>
     <startLevel level="5">
         <bundle>
             <groupId>org.liveSense</groupId>
             <artifactId>org.liveSense.webconsole.branding</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1-SNAPSHOT</version>
         </bundle>
         <bundle>
             <groupId>org.apache.sling</groupId>
@@ -257,7 +257,7 @@
             <artifactId>org.apache.sling.extensions.explorer</artifactId>
             <version>1.0.0</version>
         </bundle>
-    </startLevel> -->
+    </startLevel>
 
     <startLevel level="10">
         <bundle>
@@ -280,7 +280,38 @@
             <artifactId>org.apache.felix.metatype</artifactId>
             <version>1.0.4</version>
         </bundle>
-    </startLevel> -->
+		<bundle>
+			<groupId>org.liveSense</groupId>
+			<artifactId>org.liveSense.scripting.jsp.taglib.jstl</artifactId>
+			<version>1.0.1-SNAPSHOT</version>
+		</bundle>
+		<bundle>
+			<groupId>org.liveSense</groupId>
+			<artifactId>org.liveSense.scripting.jsp.taglib.json</artifactId>
+			<version>1.0.1-SNAPSHOT</version>
+		</bundle>
+		<bundle>
+			<artifactId>org.liveSense.misc.image.codec.jpeg</artifactId>
+			<groupId>org.liveSense</groupId>
+			<version>1.0.1-SNAPSHOT</version>
+		</bundle>
+   		<bundle>
+			<groupId>org.liveSense</groupId>
+			<artifactId>org.liveSense.misc.sun.misc</artifactId>
+			<version>1.0.1-SNAPSHOT</version>
+		</bundle>
+   		<bundle>
+			<groupId>org.liveSense</groupId>
+			<artifactId>org.liveSense.misc.i18n</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</bundle>
+   		<bundle>
+			<groupId>org.liveSense</groupId>
+			<artifactId>org.liveSense.misc.jsr303</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</bundle>
+
+    </startLevel>
 
     <startLevel level="15">
         <bundle>
@@ -358,96 +389,74 @@
             <artifactId>org.apache.sling.jcr.davex</artifactId>
             <version>1.0.0</version>
         </bundle>
-
         <bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.core</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1-SNAPSHOT</version>
 		</bundle>
 		<bundle>
 			<artifactId>org.liveSense.misc.configloader</artifactId>
 			<groupId>org.liveSense</groupId>
-			<version>1.0.0</version>
+			<version>1.0.1-SNAPSHOT</version>
 		</bundle>
 		<bundle>
         	<groupId>org.apache.sling</groupId>
         	<artifactId>org.apache.sling.event</artifactId>
         	<version>3.0.0</version>
         </bundle>
-        </startLevel> -->
-	<startLevel level="20">
-		<bundle>
-			<artifactId>org.liveSense.image.codec.jpeg</artifactId>
-			<groupId>org.liveSense</groupId>
-			<version>1.0.0</version>
-		</bundle>
 		<bundle>
 			<artifactId>org.liveSense.servlet.gwtrpc</artifactId>
-                        <groupId>org.liveSense</groupId>
-			<version>1.0.0</version>
+            <groupId>org.liveSense</groupId>
+			<version>1.0.1-SNAPSHOT</version>
 		</bundle>
 		<bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.service.XSSRemove</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1-SNAPSHOT</version>
 		</bundle>
 		<bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.service.thumbnailGenerator</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1-SNAPSHOT</version>
 		</bundle>
 		<bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.service.securityManager</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1-SNAPSHOT</version>
 		</bundle>
 		<bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.service.languageselector</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1-SNAPSHOT</version>
 		</bundle>
 		<bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.service.email</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1-SNAPSHOT</version>
 		</bundle>
 		<bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.service.captha</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1-SNAPSHOT</version>
 		</bundle>
 		<bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.service.activation</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1-SNAPSHOT</version>
 		</bundle>
-		<bundle>
-			<groupId>org.liveSense</groupId>
-			<artifactId>org.liveSense.scripting.jsp.taglib.jstl</artifactId>
-			<version>1.0.0</version>
-		</bundle>
-		<bundle>
-			<groupId>org.liveSense</groupId>
-			<artifactId>org.liveSense.scripting.jsp.taglib.json</artifactId>
-			<version>1.0.0</version>
-		</bundle>
-		<bundle>
-			<groupId>org.liveSense</groupId>
-			<artifactId>org.liveSense.sun.misc</artifactId>
-			<version>1.0.0</version>
-		</bundle>
-
+    </startLevel>
+	<startLevel level="20">
 		<bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.sample.gwt.Notes</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.1-SNAPSHOT</version>
 		</bundle>
 
 		<bundle>
 			<groupId>org.liveSense</groupId>
-			<artifactId>org.liveSense.sample.simpleportal</artifactId>
-			<version>1.0.0</version>
+			<artifactId>org.liveSense.sample.simplePortal</artifactId>
+			<version>1.0.1-SNAPSHOT</version>
 		</bundle>
 
-	</startLevel> -->
+	</startLevel>
 	</bundles>
