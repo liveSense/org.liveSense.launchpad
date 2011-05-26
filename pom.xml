@@ -192,7 +192,7 @@
                         launcher modules
                     -->
                     <webAppSourceDirectory>
-                        target/${artifactId}-${pom.version}
+                        target/${project.artifactId}-${project.version}
                     </webAppSourceDirectory>
                     <webAppConfig>
                         <contextPath>${jetty.sling.context}</contextPath>
