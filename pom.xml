@@ -12,11 +12,7 @@
       <developerConnection>scm:git:git://github.com/liveSense/org.liveSense.launchpad.git</developerConnection>
       <url>https://github.com/liveSense/org.liveSense.launchpad</url>
   </scm>  
-
-
-	<groupId>org.liveSense</groupId>
 	<modelVersion>4.0.0</modelVersion>
-
 
 	<artifactId>org.liveSense.launchpad</artifactId>
 	<packaging>war</packaging>
