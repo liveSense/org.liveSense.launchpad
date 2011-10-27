@@ -12,6 +12,7 @@
       <developerConnection>scm:git:git://github.com/liveSense/org.liveSense.launchpad.git</developerConnection>
       <url>https://github.com/liveSense/org.liveSense.launchpad</url>
   </scm>  
+  
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>org.liveSense.launchpad</artifactId>
@@ -25,7 +26,7 @@
         <!--
             Jetty default port (override with -D)
         -->
-        <http.port>8888</http.port>
+        <http.port>8080</http.port>
 
         <!-- path suffix for HTTP access to Sling -->
         <http.base.path />
@@ -126,19 +127,19 @@
                             <goal>create-bundle-jar</goal>
                         </goals>
                         <configuration>
-			    <includeDefaultBundles>false</includeDefaultBundles>
-			    <resources>
-                                <!-- Legal stuff -->
-                                <resource>
-                                    <directory>${basedir}</directory>
-                                    <targetPath>META-INF</targetPath>
-                                    <includes>
-                                        <include>LICENSE*</include>
-                                        <include>NOTICE*</include>
-                                        <include>DISCLAIMER</include>
-                                    </includes>
-                                </resource>
-                            </resources>
+			    				<includeDefaultBundles>false</includeDefaultBundles>
+			    				<resources>
+	                                <!-- Legal stuff -->
+	                                <resource>
+	                                    <directory>${basedir}</directory>
+	                                    <targetPath>META-INF</targetPath>
+	                                    <includes>
+	                                        <include>LICENSE*</include>
+	                                        <include>NOTICE*</include>
+	                                        <include>DISCLAIMER</include>
+	                                    </includes>
+	                                </resource>
+                            	</resources>
 						</configuration>
                     </execution>
                 </executions>
@@ -234,31 +235,6 @@
                     <target>1.5</target>
                 </configuration>
             </plugin>
-
-
-      <!-- Used to configure IzPack installer -->
-
-      <plugin>
-        <artifactId>maven-resources-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>copy-resources</id>
-            <phase>validate</phase>
-            <goals>
-              <goal>copy-resources</goal>
-            </goals>
-            <configuration>
-              <encoding>UTF-8</encoding>
-              <outputDirectory>${staging.dir}</outputDirectory>
-              <resources>
-                <resource>
-                  <directory>src/main/resources</directory>
-                </resource>
-              </resources>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
         </plugins>
     </build>
     <reporting>

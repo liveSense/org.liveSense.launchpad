@@ -22,6 +22,33 @@
       <artifactId>commons-lang</artifactId>
       <version>2.5</version>
     </bundle>
+    <!-- 
+    <bundle>
+    	<groupId>com.thoughtworks.xstream</groupId>
+    	<artifactId>xstream</artifactId>
+    	<version>1.4.1</version>
+	</bundle>
+    -->
+    <bundle>
+    	<groupId>org.apache.servicemix.bundles</groupId>
+    	<artifactId>org.apache.servicemix.bundles.xstream</artifactId>
+    	<version>1.4.1_1</version>
+	</bundle>
+	<bundle>
+    	<groupId>org.apache.servicemix.bundles</groupId>
+    	<artifactId>org.apache.servicemix.bundles.xmlpull</artifactId>
+    	<version>1.1.3.1_2</version>
+	</bundle>
+	<bundle>
+    	<groupId>org.apache.servicemix.bundles</groupId>
+    	<artifactId>org.apache.servicemix.bundles.xpp3</artifactId>
+    	<version>1.1.4c_5</version>
+	</bundle>
+	<bundle>
+	    <groupId>org.apache.servicemix.bundles</groupId>
+	    <artifactId>org.apache.servicemix.bundles.freemarker</artifactId>
+	    <version>2.3.18_1</version>
+	</bundle>
     <bundle>
       <groupId>org.apache.sling</groupId>
       <artifactId>org.apache.sling.commons.osgi</artifactId>
@@ -164,11 +191,13 @@
       <artifactId>org.apache.sling.scripting.jsp</artifactId>
       <version>2.0.18</version>
     </bundle>
+    <!-- Problem with SLF4J 
     <bundle>
       <groupId>org.apache.sling</groupId>
       <artifactId>org.apache.sling.scripting.freemarker</artifactId>
       <version>2.0.0-SNAPSHOT</version>
     </bundle>
+     -->
     <bundle>
       <groupId>org.apache.sling</groupId>
       <artifactId>org.apache.sling.scripting.jsp.taglib</artifactId>
@@ -177,7 +206,7 @@
     <bundle>
       <groupId>org.codehaus.groovy</groupId>
       <artifactId>groovy-all</artifactId>
-      <version>1.7.4</version>
+      <version>1.8.2</version>
     </bundle>
     <bundle>
       <groupId>org.apache.felix</groupId>
@@ -207,7 +236,7 @@
     <bundle>
       <groupId>org.apache.sling</groupId>
       <artifactId>org.apache.sling.launchpad.installer</artifactId>
-      <version>1.0.2</version>
+      <version>1.0.4</version>
     </bundle>
     <bundle>
       <groupId>org.apache.sling</groupId>
@@ -217,7 +246,7 @@
     <bundle>
       <groupId>org.apache.sling</groupId>
       <artifactId>org.apache.sling.installer.provider.file</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.2</version>
     </bundle>
     <bundle>
       <groupId>org.apache.sling</groupId>
@@ -226,12 +255,67 @@
     </bundle>
   </startLevel>
   <startLevel level="1">
+  	<bundle>
+  		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-api</artifactId>
+		<version>1.6.1</version>
+    </bundle>
     <!-- Launchpad default packages -->
     <bundle>
       <groupId>org.apache.sling</groupId>
       <artifactId>org.apache.sling.commons.log</artifactId>
-      <version>2.1.2</version>
+      <version>2.1.3-SNAPSHOT</version>
     </bundle>
+    <bundle>
+      <groupId>org.apache.sling</groupId>
+      <artifactId>org.apache.sling.commons.logservice</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </bundle>
+    <bundle>
+      <groupId>org.slf4j</groupId>
+      <artifactId>jcl-over-slf4j</artifactId>
+      <version>1.6.1</version>
+    </bundle>
+    <bundle>
+      <groupId>org.slf4j</groupId>
+      <artifactId>log4j-over-slf4j</artifactId>
+     <version>1.6.1</version>
+    </bundle>
+    <!--  Already registered in liveSense 
+    <bundle>
+        <groupId>org.apache.sling</groupId>
+        <artifactId>org.apache.sling.fragment.xml</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </bundle>
+    -->
+    <bundle>
+        <groupId>org.apache.sling</groupId>
+        <artifactId>org.apache.sling.fragment.transaction</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </bundle>
+    <bundle>
+        <groupId>org.apache.sling</groupId>
+        <artifactId>org.apache.sling.fragment.activation</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </bundle>
+
+	<!-- liveSense fragment bundles -->
+	<bundle>
+		<artifactId>org.liveSense.fragment.com.sun.image.codec.jpeg</artifactId>
+		<groupId>org.liveSense</groupId>
+		<version>1.0.1-SNAPSHOT</version>
+	</bundle>
+   	<bundle>
+		<groupId>org.liveSense</groupId>
+		<artifactId>org.liveSense.fragment.sun.misc</artifactId>
+		<version>1.0.1-SNAPSHOT</version>
+	</bundle>
+	<bundle>
+		<groupId>org.liveSense</groupId>
+		<artifactId>org.liveSense.fragment.xml-jre-1.6</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</bundle>
+
   </startLevel>
   <startLevel level="5">
     <!-- Launchpad default packages -->
@@ -248,7 +332,7 @@
     <bundle>
       <groupId>org.apache.felix</groupId>
       <artifactId>org.apache.felix.webconsole</artifactId>
-      <version>3.1.8</version>
+      <version>3.1.6</version>
     </bundle>
     <bundle>
       <groupId>org.apache.felix</groupId>
@@ -291,7 +375,7 @@
     <bundle>
       <groupId>org.apache.felix</groupId>
       <artifactId>org.apache.felix.eventadmin</artifactId>
-      <version>1.2.12</version>
+      <version>1.2.14</version>
     </bundle>
     <bundle>
       <groupId>org.apache.felix</groupId>
@@ -329,62 +413,62 @@
     <bundle>
       <groupId>org.apache.jackrabbit</groupId>
       <artifactId>jackrabbit-api</artifactId>
-      <version>2.1.1</version>
+      <version>2.2.5</version>
     </bundle>
     <bundle>
       <groupId>org.apache.derby</groupId>
       <artifactId>derby</artifactId>
-      <version>10.5.3.0_1</version>
+      <version>10.8.1.2</version>
     </bundle>
     <bundle>
       <groupId>org.apache.tika</groupId>
       <artifactId>tika-bundle</artifactId>
-      <version>0.6</version>
+      <version>0.9</version>
     </bundle>
     <bundle>
       <groupId>org.apache.sling</groupId>
       <artifactId>org.apache.sling.jcr.jackrabbit.server</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1-SNAPSHOT</version>
     </bundle>
     <bundle>
       <groupId>org.apache.sling</groupId>
       <artifactId>org.apache.sling.jcr.jackrabbit.usermanager</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1-SNAPSHOT</version>
     </bundle>
     <bundle>
       <groupId>org.apache.sling</groupId>
       <artifactId>org.apache.sling.jcr.jackrabbit.accessmanager</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1-SNAPSHOT</version>
     </bundle>
     <bundle>
       <groupId>org.apache.jackrabbit</groupId>
       <artifactId>jackrabbit-jcr-commons</artifactId>
-      <version>2.1.1</version>
+      <version>2.2.5</version>
     </bundle>
     <bundle>
       <groupId>org.apache.jackrabbit</groupId>
       <artifactId>jackrabbit-spi</artifactId>
-      <version>2.1.1</version>
+      <version>2.2.5</version>
     </bundle>
     <bundle>
       <groupId>org.apache.jackrabbit</groupId>
       <artifactId>jackrabbit-spi-commons</artifactId>
-      <version>2.1.1</version>
+      <version>2.2.5</version>
     </bundle>
     <bundle>
       <groupId>org.apache.jackrabbit</groupId>
       <artifactId>jackrabbit-jcr-rmi</artifactId>
-      <version>2.1.1</version>
+      <version>2.2.5</version>
     </bundle>
     <bundle>
       <groupId>org.apache.sling</groupId>
       <artifactId>org.apache.sling.jcr.webdav</artifactId>
-      <version>2.1.0</version>
+      <version>2.1.1-SNAPSHOT</version>
     </bundle>
     <bundle>
       <groupId>org.apache.sling</groupId>
       <artifactId>org.apache.sling.jcr.davex</artifactId>
-      <version>1.0.0</version>
+      <version>1.0.1-SNAPSHOT</version>
     </bundle>
     
     <!-- Sling Extensions -->
@@ -394,7 +478,6 @@
       <artifactId>org.apache.sling.commons.compiler</artifactId>
       <version>2.0.2</version>
     </bundle>
-    -->
     <bundle>
       <groupId>org.apache.sling</groupId>
       <artifactId>org.apache.sling.commons.html</artifactId>
@@ -405,7 +488,6 @@
       <artifactId>org.apache.sling.extensions.apt.parser</artifactId>
       <version>2.0.2-incubator</version>
     </bundle>
-    <!--
     <bundle>
       <groupId>org.apache.sling</groupId>
       <artifactId>org.apache.sling.jcr.compiler</artifactId>
@@ -422,6 +504,7 @@
       <artifactId>org.apache.sling.i18n</artifactId>
       <version>2.1.2</version>
     </bundle>
+
     <!-- LiveSense packages -->
 	<bundle>
 		<groupId>org.liveSense</groupId>
@@ -429,43 +512,53 @@
 		<version>1.0.1-SNAPSHOT</version>
 	</bundle>
 	<bundle>
-		<artifactId>org.liveSense.misc.configurationLoader</artifactId>
 		<groupId>org.liveSense</groupId>
-		<version>1.0.1-SNAPSHOT</version>
-	</bundle>
-	<bundle>
-		<artifactId>org.liveSense.servlet.gwtrpc</artifactId>
-		<groupId>org.liveSense</groupId>
-		<version>1.0.1-SNAPSHOT</version>
+		<artifactId>org.liveSense.framework.cxf</artifactId>
+		<version>1.0.0-2.4.2-SNAPSHOT</version>
 	</bundle>
 	<bundle>
 		<groupId>org.liveSense</groupId>
-		<artifactId>org.liveSense.service.xssRemove</artifactId>
-		<version>1.0.1-SNAPSHOT</version>
+		<artifactId>org.liveSense.framework.gwt</artifactId>
+		<version>1.0.1-2.4.0-SNAPSHOT</version>
 	</bundle>
 	<bundle>
 		<groupId>org.liveSense</groupId>
-		<artifactId>org.liveSense.service.thumbnailGenerator</artifactId>
-		<version>1.0.1-SNAPSHOT</version>
+		<artifactId>org.liveSense.framework.gxt</artifactId>
+		<version>1.0.1-2.2.5-SNAPSHOT</version>
 	</bundle>
 	<bundle>
 		<groupId>org.liveSense</groupId>
-		<artifactId>org.liveSense.service.securityManager</artifactId>
-		<version>1.0.1-SNAPSHOT</version>
+		<artifactId>org.liveSense.misc.i18n</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
 	</bundle>
 	<bundle>
 		<groupId>org.liveSense</groupId>
-		<artifactId>org.liveSense.service.languageSelector</artifactId>
-		<version>1.0.1-SNAPSHOT</version>
+		<artifactId>org.liveSense.misc.javax.persistence</artifactId>
+		<version>1.0.1-1.0-SNAPSHOT</version>
 	</bundle>
 	<bundle>
 		<groupId>org.liveSense</groupId>
-		<artifactId>org.liveSense.service.email</artifactId>
-		<version>1.0.1-SNAPSHOT</version>
+		<artifactId>org.liveSense.misc.jcrom</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
 	</bundle>
 	<bundle>
 		<groupId>org.liveSense</groupId>
-		<artifactId>org.liveSense.service.captha</artifactId>
+		<artifactId>org.liveSense.misc.jsr303</artifactId>
+		<version>1.0.0-1.0.0.GA-SNAPSHOT</version>
+	</bundle>
+	<bundle>
+		<groupId>org.liveSense</groupId>
+		<artifactId>org.liveSense.misc.queryBuilder</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</bundle>
+	<bundle>
+		<groupId>org.liveSense</groupId>
+		<artifactId>org.liveSense.scripting.jsp.taglib.jstl</artifactId>
+		<version>1.0.1-1.1.2-SNAPSHOT</version>
+	</bundle>
+	<bundle>
+		<groupId>org.liveSense</groupId>
+		<artifactId>org.liveSense.scripting.jsp.taglib.json</artifactId>
 		<version>1.0.1-SNAPSHOT</version>
 	</bundle>
 	<bundle>
@@ -475,39 +568,52 @@
 	</bundle>
 	<bundle>
 		<groupId>org.liveSense</groupId>
-		<artifactId>org.liveSense.scripting.jsp.taglib.jstl</artifactId>
+		<artifactId>org.liveSense.service.captha</artifactId>
 		<version>1.0.1-SNAPSHOT</version>
 	</bundle>
 	<bundle>
 		<groupId>org.liveSense</groupId>
-		<artifactId>org.liveSense.scripting.jsp.taglib.json</artifactId>
-		<version>1.0.1-SNAPSHOT</version>
-	</bundle>
-	<bundle>
-		<artifactId>org.liveSense.misc.image.codec.jpeg</artifactId>
-		<groupId>org.liveSense</groupId>
-		<version>1.0.1-SNAPSHOT</version>
-	</bundle>
-   	<bundle>
-		<groupId>org.liveSense</groupId>
-		<artifactId>org.liveSense.misc.sun.misc</artifactId>
-		<version>1.0.1-SNAPSHOT</version>
-	</bundle>
-	<bundle>
-		<groupId>org.liveSense</groupId>
-		<artifactId>org.liveSense.misc.i18n</artifactId>
+		<artifactId>org.liveSense.service.dataSourceProvider</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</bundle>
 	<bundle>
 		<groupId>org.liveSense</groupId>
-		<artifactId>org.liveSense.misc.jsr303</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
+		<artifactId>org.liveSense.service.email</artifactId>
+		<version>1.0.1-SNAPSHOT</version>
 	</bundle>
 	<bundle>
 		<groupId>org.liveSense</groupId>
-		<artifactId>org.liveSense.misc.javax.persistence</artifactId>
+		<artifactId>org.liveSense.service.languageSelector</artifactId>
 		<version>1.0.1-SNAPSHOT</version>
 	</bundle>
+	<bundle>
+		<groupId>org.liveSense</groupId>
+		<artifactId>org.liveSense.service.report.jasper</artifactId>
+		<version>1.0.1-SNAPSHOT</version>
+	</bundle>
+	<bundle>
+		<groupId>org.liveSense</groupId>
+		<artifactId>org.liveSense.service.securityManager</artifactId>
+		<version>1.0.1-SNAPSHOT</version>
+	</bundle>
+	<bundle>
+		<groupId>org.liveSense</groupId>
+		<artifactId>org.liveSense.service.thumbnailGenerator</artifactId>
+		<version>1.0.1-SNAPSHOT</version>
+	</bundle>
+	<bundle>
+		<groupId>org.liveSense</groupId>
+		<artifactId>org.liveSense.service.xssRemove</artifactId>
+		<version>1.0.1-SNAPSHOT</version>
+	</bundle>
+
+	<!--  Configuration load service -->
+ 	<bundle>
+		<artifactId>org.liveSense.misc.configurationLoader</artifactId>
+		<groupId>org.liveSense</groupId>
+		<version>1.0.1-SNAPSHOT</version>
+	</bundle>
+
 	<!-- Launchpad initial content -->
 	<bundle>
 		<groupId>org.liveSense</groupId>
@@ -515,19 +621,18 @@
 		<version>1.0.1-SNAPSHOT</version>
 	</bundle>
 	</startLevel>
+
 	<startLevel level="20">
 		<bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.sample.gwt.notes</artifactId>
 			<version>1.0.1-SNAPSHOT</version>
 		</bundle>
-
 		<bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.sample.simplePortal</artifactId>
 			<version>1.0.1-SNAPSHOT</version>
 		</bundle>
-
 	</startLevel>
 
 </bundles>
