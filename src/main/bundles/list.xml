@@ -141,11 +141,6 @@
             
 		<!-- Mail API -->
 		<bundle>
-			<groupId>org.apache.servicemix.specs</groupId>
-			<artifactId>org.apache.servicemix.specs.activation-api-1.1</artifactId>
-			<version>1.9.0</version>
-		</bundle>
-		<bundle>
 			<groupId>org.glassfish</groupId>
 			<artifactId>javax.mail</artifactId>
 			<version>3.0-Preview</version>
@@ -417,12 +412,13 @@
 			<artifactId>org.apache.sling.fragment.transaction</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</bundle>
+        <!-- Already registered in liveSense
 		<bundle>
 			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.fragment.activation</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</bundle>
-
+        -->
 	<!-- liveSense fragment bundles -->
 		<bundle>
 			<artifactId>org.liveSense.fragment.com.sun.image.codec.jpeg</artifactId>
@@ -447,6 +443,11 @@
 		<bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.fragment.javax.xml-jre-1.6</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</bundle>
+		<bundle>
+			<groupId>org.liveSense</groupId>
+			<artifactId>org.liveSense.fragment.javax.activation-jre-1.6</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
 		</bundle>
 
