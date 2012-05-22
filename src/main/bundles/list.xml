@@ -146,14 +146,9 @@
 			<version>1.9.0</version>
 		</bundle>
 		<bundle>
-		<groupId>org.apache.servicemix.bundles</groupId>
-			<artifactId>org.apache.servicemix.bundles.javax.mail</artifactId>
-			<version>1.4.1_5</version>
-		</bundle>
-		<bundle>
-			<groupId>org.apache.servicemix.specs</groupId>
-			<artifactId>org.apache.servicemix.specs.javamail-api-1.4</artifactId>
-			<version>1.9.0</version>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.mail</artifactId>
+			<version>3.0-Preview</version>
 		</bundle>
 		
 		<!-- CGLib -->
@@ -441,7 +436,17 @@
 		</bundle>
 		<bundle>
 			<groupId>org.liveSense</groupId>
-			<artifactId>org.liveSense.fragment.xml-jre-1.6</artifactId>
+			<artifactId>org.liveSense.fragment.sun.security</artifactId>
+			<version>1.0.1-SNAPSHOT</version>
+		</bundle>
+		<bundle>
+			<groupId>org.liveSense</groupId>
+			<artifactId>org.liveSense.fragment.javax.jws-jre-1.6</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</bundle>
+		<bundle>
+			<groupId>org.liveSense</groupId>
+			<artifactId>org.liveSense.fragment.javax.xml-jre-1.6</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
 		</bundle>
 
