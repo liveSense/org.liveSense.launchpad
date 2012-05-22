@@ -34,14 +34,34 @@
 			<version>2.1</version>
 		</bundle>
 		<bundle>
-			<groupId>com.googlecode.guava-osgi</groupId>
-			<artifactId>guava-osgi</artifactId>
-			<version>10.0.0</version>
-		</bundle>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</bundle>		
 		<bundle>
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
 			<version>1.4</version>
+		</bundle>
+		<bundle>
+			<groupId>commons-pool</groupId>
+			<artifactId>commons-pool</artifactId>
+			<version>1.6</version>
+		</bundle>
+		<bundle>
+			<groupId>commons-dbutils</groupId>
+			<artifactId>commons-dbutils</artifactId>
+			<version>1.4</version>
+		</bundle>
+		<bundle>
+            <groupId>net.sf.transmorph</groupId>
+            <artifactId>transmorph</artifactId>
+            <version>3.1.1</version>
+        </bundle>
+		<bundle>
+			<groupId>com.googlecode.guava-osgi</groupId>
+			<artifactId>guava-osgi</artifactId>
+			<version>10.0.0</version>
 		</bundle>
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
@@ -58,6 +78,7 @@
 			<artifactId>httpclient-osgi</artifactId>
 			<version>4.1.2</version>
 		</bundle>
+		
 		<!--  Jasper reports -->
 		<!-- 
 		<bundle>
@@ -103,11 +124,46 @@
 			<artifactId>org.apache.servicemix.bundles.xpp3</artifactId>
 			<version>1.1.4c_5</version>
 		</bundle>
+		
+		<!--  Freemarker -->
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.freemarker</artifactId>
 			<version>2.3.18_1</version>
 		</bundle>
+		
+		<!-- Xerces -->
+		<bundle>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.xerces</artifactId>
+			<version>2.10.0_1</version>
+		</bundle>
+            
+		<!-- Mail API -->
+		<bundle>
+			<groupId>org.apache.servicemix.specs</groupId>
+			<artifactId>org.apache.servicemix.specs.activation-api-1.1</artifactId>
+			<version>1.9.0</version>
+		</bundle>
+		<bundle>
+		<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.javax.mail</artifactId>
+			<version>1.4.1_5</version>
+		</bundle>
+		<bundle>
+			<groupId>org.apache.servicemix.specs</groupId>
+			<artifactId>org.apache.servicemix.specs.javamail-api-1.4</artifactId>
+			<version>1.9.0</version>
+		</bundle>
+		
+		<!-- CGLib -->
+		<bundle>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.cglib</artifactId>
+			<version>2.1_3_4</version>
+		</bundle>
+		
+		<!-- Sling -->
 		<bundle>
 			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.commons.osgi</artifactId>
@@ -678,7 +734,7 @@
 		<bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.service.report.jasper</artifactId>
-			<version>1.0.1-SNAPSHOT</version>
+			<version>4.5.0-1.0.1-SNAPSHOT</version>
 		</bundle>
 		<bundle>
 			<groupId>org.liveSense</groupId>
