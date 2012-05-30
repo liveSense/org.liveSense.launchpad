@@ -95,6 +95,9 @@
 							<includeDefaultBundles>false</includeDefaultBundles>
 						</configuration>
                     </execution>
+                    
+                    <!--  Better way to implement - Now uses XML -->
+<!-- 
                     <execution>
                         <id>create-karaf-descriptor</id>
                         <goals>
@@ -121,6 +124,7 @@
                             </bundleExclusions>
                         </configuration>
                     </execution>
+ -->
                     <execution>
                         <id>create-bundle-jar</id>
                         <goals>
@@ -227,6 +231,7 @@
                     </webResources>
                 </configuration>
             </plugin>
+            
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -319,6 +324,12 @@
                 <id>Apache Snapshots</id>
                 <url>https://repository.apache.org/content/repositories/snapshots</url>
         </repository>
+        
+        <repository>
+        			<id>Alfresco</id>
+        			<url>http://maven.alfresco.com/nexus/content/repositories/public</url>
+        </repository>
+        
     </repositories>
 </project>
 
