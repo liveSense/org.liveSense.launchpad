@@ -54,6 +54,11 @@
 			<version>1.4</version>
 		</bundle>
 		<bundle>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.commons-vfs</artifactId>
+			<version>1.0_6</version>
+		</bundle>
+		<bundle>
             <groupId>net.sf.transmorph</groupId>
             <artifactId>transmorph</artifactId>
             <version>3.1.1</version>
@@ -107,6 +112,12 @@
 			<artifactId>org.apache.servicemix.bundles.xmlresolver</artifactId>
 			<version>1.2_4</version>
 		</bundle>
+		<bundle>
+			<groupId>org.apache.servicemix.specs</groupId>
+			<artifactId>org.apache.servicemix.specs.stax-api-1.0</artifactId>
+			<version>1.9.0</version>
+		</bundle>
+            
 
 	    <!--  For XStream -->
 		<bundle>
@@ -151,6 +162,130 @@
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.cglib</artifactId>
 			<version>2.1_3_4</version>
+		</bundle>
+
+
+		<!-- Spring framework -->
+		<bundle>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.aopalliance</artifactId>
+			<version>1.0_3</version>
+		</bundle>
+
+		<bundle>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-asm</artifactId>
+			<version>3.0.5.RELEASE</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>3.0.5.RELEASE</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>3.0.5.RELEASE</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>3.0.5.RELEASE</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>3.0.5.RELEASE</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>3.0.5.RELEASE</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>3.0.5.RELEASE</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-expression</artifactId>
+			<version>3.0.5.RELEASE</version>
+		</bundle>
+		
+		<!-- Bundles for activity -->
+		<bundle>
+			<groupId>org.apache.aries.transaction</groupId>
+			<artifactId>org.apache.aries.transaction.manager</artifactId>
+			<version>0.3</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.wsdl4j</artifactId>
+			<version>1.6.2_3</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.mybatis</artifactId>
+			<version>3.0.2_1</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.drools</artifactId>
+			<version>5.1.1_2</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.jdt-core</artifactId>
+			<version>3.2.3_5</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.quartz</artifactId>
+			<version>1.8.4_2</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.antlr</artifactId>
+			<version>2.7.7_4</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.asm</artifactId>
+			<version>2.2.3_5</version>
+		</bundle>
+		
+		<!-- Activity -->
+		<bundle>
+			<groupId>com.fasterxml.uuid</groupId>
+			<artifactId>java-uuid-generator</artifactId>
+			<version>3.1.2</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-engine</artifactId>
+			<version>5.8</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-osgi</artifactId>
+			<version>5.8</version>
 		</bundle>
 		
 		<!-- Sling -->
@@ -376,12 +511,12 @@
     -->
 		<bundle>
 			<groupId>org.liveSense</groupId>
-			<artifactId>org.liveSense.misc.log.lilithappender</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<artifactId>org.liveSense.misc.log.lilith.core</artifactId>
+			<version>0.9.41_1-SNAPSHOT</version>
 		</bundle>
 		<bundle>
 			<groupId>org.liveSense</groupId>
-			<artifactId>org.liveSense.misc.log.lilithappender.config.default</artifactId>
+			<artifactId>org.liveSense.misc.log.config.default</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
 		</bundle>
 
@@ -400,6 +535,17 @@
 			<artifactId>log4j-over-slf4j</artifactId>
 			<version>1.6.1</version>
 		</bundle>
+		<bundle>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.0.3</version>
+		</bundle>
+		<bundle>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>1.0.3</version>
+		</bundle>
+
     <!--  Already registered in liveSense 
     <bundle>
         <groupId>org.apache.sling</groupId>
