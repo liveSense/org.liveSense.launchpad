@@ -111,12 +111,13 @@
 			<artifactId>org.apache.servicemix.bundles.xmlresolver</artifactId>
 			<version>1.2_4</version>
 		</bundle>
+<!--
 		<bundle>
 			<groupId>org.apache.servicemix.specs</groupId>
 			<artifactId>org.apache.servicemix.specs.stax-api-1.0</artifactId>
 			<version>1.9.0</version>
 		</bundle>
-            
+-->
 
 	    <!--  For XStream -->
 		<bundle>
@@ -760,8 +761,13 @@
 		</bundle>
 		<bundle>
 			<groupId>org.apache.tika</groupId>
+			<artifactId>tika-core</artifactId>
+			<version>1.1</version>
+		</bundle>
+		<bundle>
+			<groupId>org.apache.tika</groupId>
 			<artifactId>tika-bundle</artifactId>
-			<version>0.9</version>
+			<version>1.1</version>
 		</bundle>
 		<bundle>
 			<groupId>org.apache.sling</groupId>
