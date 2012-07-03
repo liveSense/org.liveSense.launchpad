@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <bundles>
-  <!-- Launchpad default packages -->
+	<!-- Launchpad default packages -->
 	<startLevel>
 		<bundle>
 			<groupId>commons-io</groupId>
@@ -36,7 +36,7 @@
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.4</version>
-		</bundle>		
+		</bundle>
 		<bundle>
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
@@ -58,10 +58,10 @@
 			<version>1.0_6</version>
 		</bundle>
 		<bundle>
-            <groupId>net.sf.transmorph</groupId>
-            <artifactId>transmorph</artifactId>
-            <version>3.1.1</version>
-        </bundle>
+			<groupId>net.sf.transmorph</groupId>
+			<artifactId>transmorph</artifactId>
+			<version>3.1.1</version>
+		</bundle>
 		<bundle>
 			<groupId>com.googlecode.guava-osgi</groupId>
 			<artifactId>guava-osgi</artifactId>
@@ -69,7 +69,8 @@
 		</bundle>
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
-			<artifactId>org.apache.servicemix.bundles.commons-httpclient</artifactId>
+			<artifactId>org.apache.servicemix.bundles.commons-httpclient
+			</artifactId>
 			<version>3.1_6</version>
 		</bundle>
 		<bundle>
@@ -82,15 +83,10 @@
 			<artifactId>httpclient-osgi</artifactId>
 			<version>4.1.2</version>
 		</bundle>
-		
-		<!--  Jasper reports -->
-		<!-- 
-		<bundle>
-   			<groupId>org.apache.servicemix.bundles</groupId>
-   			<artifactId>org.apache.servicemix.bundles.jaxp-ri</artifactId>
-   			<version>1.4.4_2</version>
-		</bundle>
-		 -->
+
+		<!-- Jasper reports -->
+		<!-- <bundle> <groupId>org.apache.servicemix.bundles</groupId> <artifactId>org.apache.servicemix.bundles.jaxp-ri</artifactId> 
+			<version>1.4.4_2</version> </bundle> -->
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.xalan</artifactId>
@@ -111,15 +107,10 @@
 			<artifactId>org.apache.servicemix.bundles.xmlresolver</artifactId>
 			<version>1.2_4</version>
 		</bundle>
-<!--
-		<bundle>
-			<groupId>org.apache.servicemix.specs</groupId>
-			<artifactId>org.apache.servicemix.specs.stax-api-1.0</artifactId>
-			<version>1.9.0</version>
-		</bundle>
--->
+		<!-- <bundle> <groupId>org.apache.servicemix.specs</groupId> <artifactId>org.apache.servicemix.specs.stax-api-1.0</artifactId> 
+			<version>1.9.0</version> </bundle> -->
 
-	    <!--  For XStream -->
+		<!-- For XStream -->
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.xstream</artifactId>
@@ -135,28 +126,28 @@
 			<artifactId>org.apache.servicemix.bundles.xpp3</artifactId>
 			<version>1.1.4c_5</version>
 		</bundle>
-		
-		<!--  Freemarker -->
+
+		<!-- Freemarker -->
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.freemarker</artifactId>
 			<version>2.3.18_1</version>
 		</bundle>
-		
+
 		<!-- Xerces -->
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.xerces</artifactId>
 			<version>2.10.0_1</version>
 		</bundle>
-            
+
 		<!-- Mail API -->
 		<bundle>
 			<groupId>org.glassfish</groupId>
 			<artifactId>javax.mail</artifactId>
 			<version>3.0-Preview</version>
 		</bundle>
-		
+
 		<!-- CGLib -->
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
@@ -177,115 +168,134 @@
 			<artifactId>spring-asm</artifactId>
 			<version>${spring.version}</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
 			<version>${spring.version}</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aspects</artifactId>
 			<version>${spring.version}</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
 			<version>${spring.version}</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
 			<version>${spring.version}</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
 			<version>${spring.version}</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-expression</artifactId>
 			<version>${spring.version}</version>
 		</bundle>
-		
+
 		<!-- Bundles for activity -->
 		<bundle>
 			<groupId>org.apache.aries.transaction</groupId>
 			<artifactId>org.apache.aries.transaction.manager</artifactId>
 			<version>0.3</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.wsdl4j</artifactId>
 			<version>1.6.2_3</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.mybatis</artifactId>
 			<version>3.0.2_1</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.drools</artifactId>
 			<version>5.1.1_2</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.jdt-core</artifactId>
 			<version>3.2.3_5</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.quartz</artifactId>
 			<version>1.8.4_2</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.antlr</artifactId>
 			<version>2.7.7_4</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.asm</artifactId>
 			<version>2.2.3_5</version>
 		</bundle>
-		
+
 		<!-- Activity -->
 		<bundle>
 			<groupId>com.fasterxml.uuid</groupId>
 			<artifactId>java-uuid-generator</artifactId>
 			<version>3.1.2</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-engine</artifactId>
 			<version>${activiti.version}</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-osgi</artifactId>
 			<version>${activiti.version}</version>
+		</bundle>
+
+		<!-- ApacheDS -->
+		<bundle>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.ehcache</artifactId>
+			<version>2.5.2_1</version>
+		</bundle>
+
+		<bundle>
+			<groupId>org.apache.mina</groupId>
+			<artifactId>mina-core</artifactId>
+			<version>2.0.4</version>
+		</bundle>
+
+		<bundle>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk16</artifactId>
+			<version>1.46</version>
 		</bundle>
 		
 		<!-- Sling -->
@@ -427,13 +437,8 @@
 			<version>${sling.fsresource.version}</version>
 		</bundle>
 
-    <!--
-    <bundle>
-      <groupId>org.apache.sling</groupId>
-      <artifactId>org.apache.sling.launchpad.content</artifactId>
-      <version>2.0.6</version>
-    </bundle>
-    -->
+		<!-- <bundle> <groupId>org.apache.sling</groupId> <artifactId>org.apache.sling.launchpad.content</artifactId> 
+			<version>2.0.6</version> </bundle> -->
 		<bundle>
 			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.scripting.api</artifactId>
@@ -458,13 +463,8 @@
 			<version>${sling.scripting.jsp.version}</version>
 		</bundle>
 
-    <!-- Problem with SLF4J 
-    <bundle>
-      <groupId>org.apache.sling</groupId>
-      <artifactId>org.apache.sling.scripting.freemarker</artifactId>
-      <version>2.0.0-SNAPSHOT</version>
-    </bundle>
-     -->
+		<!-- Problem with SLF4J <bundle> <groupId>org.apache.sling</groupId> <artifactId>org.apache.sling.scripting.freemarker</artifactId> 
+			<version>2.0.0-SNAPSHOT</version> </bundle> -->
 		<bundle>
 			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.scripting.jsp.taglib</artifactId>
@@ -532,15 +532,10 @@
 			<artifactId>slf4j-api</artifactId>
 			<version>${slf4j.version}</version>
 		</bundle>
-    <!-- Launchpad default packages -->
-    <!-- Logger -->
-    <!-- 
-    <bundle>
-      <groupId>org.apache.sling</groupId>
-      <artifactId>org.apache.sling.commons.log</artifactId>
-      <version>2.1.3-SNAPSHOT</version>
-    </bundle>
-    -->
+		<!-- Launchpad default packages -->
+		<!-- Logger -->
+		<!-- <bundle> <groupId>org.apache.sling</groupId> <artifactId>org.apache.sling.commons.log</artifactId> 
+			<version>2.1.3-SNAPSHOT</version> </bundle> -->
 		<bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.misc.log.lilith.core</artifactId>
@@ -581,32 +576,25 @@
 			<version>${logback.version}</version>
 		</bundle>
 
-    <!--  Already registered in liveSense 
-    <bundle>
-        <groupId>org.apache.sling</groupId>
-        <artifactId>org.apache.sling.fragment.xml</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </bundle>
-    -->
+		<!-- Already registered in liveSense <bundle> <groupId>org.apache.sling</groupId> 
+			<artifactId>org.apache.sling.fragment.xml</artifactId> <version>0.0.1-SNAPSHOT</version> 
+			</bundle> -->
 		<bundle>
 			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.fragment.transaction</artifactId>
 			<version>${sling.fragment.transaction.version}</version>
 		</bundle>
 
-        <!-- Already registered in liveSense
+		<!-- Already registered in liveSense <bundle> <groupId>org.apache.sling</groupId> 
+			<artifactId>org.apache.sling.fragment.activation</artifactId> <version>${sling.fragment.activation.version}</version> 
+			</bundle> -->
+		<!-- liveSense fragment bundles -->
 		<bundle>
-			<groupId>org.apache.sling</groupId>
-			<artifactId>org.apache.sling.fragment.activation</artifactId>
-			<version>${sling.fragment.activation.version}</version>
-		</bundle>
-
-        -->
-	<!-- liveSense fragment bundles -->
-		<bundle>
-			<artifactId>org.liveSense.fragment.com.sun.image.codec.jpeg</artifactId>
+			<artifactId>org.liveSense.fragment.com.sun.image.codec.jpeg
+			</artifactId>
 			<groupId>org.liveSense</groupId>
-			<version>${liveSense.fragment.com.sun.image.codec.jpeg.version}</version>
+			<version>${liveSense.fragment.com.sun.image.codec.jpeg.version}
+			</version>
 		</bundle>
 		<bundle>
 			<groupId>org.liveSense</groupId>
@@ -634,21 +622,18 @@
 
 		<bundle>
 			<groupId>org.liveSense</groupId>
-			<artifactId>org.liveSense.fragment.javax.activation-jre-1.6</artifactId>
-			<version>${liveSense.fragment.javax.activation-jre-1.6.version}</version>
+			<artifactId>org.liveSense.fragment.javax.activation-jre-1.6
+			</artifactId>
+			<version>${liveSense.fragment.javax.activation-jre-1.6.version}
+			</version>
 		</bundle>
 
 
 	</startLevel>
 	<startLevel level="5">
-    <!-- Launchpad default packages -->
-		<!-- 
-		<bundle>
-			<groupId>org.apache.sling</groupId>
-			<artifactId>org.apache.sling.extensions.webconsolebranding</artifactId>
-			<version>1.0.0</version>
-		</bundle>
-		-->
+		<!-- Launchpad default packages -->
+		<!-- <bundle> <groupId>org.apache.sling</groupId> <artifactId>org.apache.sling.extensions.webconsolebranding</artifactId> 
+			<version>1.0.0</version> </bundle> -->
 		<bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.webconsole.branding</artifactId>
@@ -658,8 +643,10 @@
 
 		<bundle>
 			<groupId>org.apache.sling</groupId>
-			<artifactId>org.apache.sling.extensions.webconsolesecurityprovider</artifactId>
-			<version>${sling.extensions.webconsolesecurityprovider.version}</version>
+			<artifactId>org.apache.sling.extensions.webconsolesecurityprovider
+			</artifactId>
+			<version>${sling.extensions.webconsolesecurityprovider.version}
+			</version>
 		</bundle>
 
 		<bundle>
@@ -674,7 +661,8 @@
 		</bundle>
 		<bundle>
 			<groupId>org.apache.felix</groupId>
-			<artifactId>org.apache.felix.webconsole.plugins.memoryusage</artifactId>
+			<artifactId>org.apache.felix.webconsole.plugins.memoryusage
+			</artifactId>
 			<version>1.0.2</version>
 		</bundle>
 		<bundle>
@@ -708,7 +696,7 @@
 
 	</startLevel>
 	<startLevel level="10">
-    <!-- Launchpad default packages -->
+		<!-- Launchpad default packages -->
 		<bundle>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.apache.felix.eventadmin</artifactId>
@@ -731,7 +719,7 @@
 		</bundle>
 	</startLevel>
 	<startLevel level="15">
-    <!-- Launchpad default packages -->
+		<!-- Launchpad default packages -->
 		<bundle>
 			<groupId>javax.jcr</groupId>
 			<artifactId>jcr</artifactId>
@@ -783,11 +771,12 @@
 
 		<bundle>
 			<groupId>org.apache.sling</groupId>
-			<artifactId>org.apache.sling.jcr.jackrabbit.accessmanager</artifactId>
+			<artifactId>org.apache.sling.jcr.jackrabbit.accessmanager
+			</artifactId>
 			<version>${sling.jcr.jackrabbit.accessmanager.version}</version>
 		</bundle>
 
-    <!-- UI for user manager and access manager -->
+		<!-- UI for user manager and access manager -->
 		<bundle>
 			<groupId>org.apache.sling.samples</groupId>
 			<artifactId>org.apache.sling.samples.usermanager.ui</artifactId>
@@ -835,35 +824,16 @@
 			<version>${sling.jcr.davex.version}</version>
 		</bundle>
 
-    
-    <!-- Sling Extensions -->
-	<!--
-    <bundle>
-      <groupId>org.apache.sling</groupId>
-      <artifactId>org.apache.sling.commons.compiler</artifactId>
-      <version>2.0.2</version>
-    </bundle>
-    <bundle>
-      <groupId>org.apache.sling</groupId>
-      <artifactId>org.apache.sling.commons.html</artifactId>
-      <version>1.0.0</version>
-    </bundle>
-    <bundle>
-      <groupId>org.apache.sling</groupId>
-      <artifactId>org.apache.sling.extensions.apt.parser</artifactId>
-      <version>2.0.2-incubator</version>
-    </bundle>
-    <bundle>
-      <groupId>org.apache.sling</groupId>
-      <artifactId>org.apache.sling.jcr.compiler</artifactId>
-      <version>2.0.2</version>
-    </bundle>
-    <bundle>
-      <groupId>org.apache.sling</groupId>
-      <artifactId>org.apache.sling.jcr.prefs</artifactId>
-      <version>1.0.0</version>
-    </bundle>
-    -->
+
+		<!-- Sling Extensions -->
+		<!-- <bundle> <groupId>org.apache.sling</groupId> <artifactId>org.apache.sling.commons.compiler</artifactId> 
+			<version>2.0.2</version> </bundle> <bundle> <groupId>org.apache.sling</groupId> 
+			<artifactId>org.apache.sling.commons.html</artifactId> <version>1.0.0</version> 
+			</bundle> <bundle> <groupId>org.apache.sling</groupId> <artifactId>org.apache.sling.extensions.apt.parser</artifactId> 
+			<version>2.0.2-incubator</version> </bundle> <bundle> <groupId>org.apache.sling</groupId> 
+			<artifactId>org.apache.sling.jcr.compiler</artifactId> <version>2.0.2</version> 
+			</bundle> <bundle> <groupId>org.apache.sling</groupId> <artifactId>org.apache.sling.jcr.prefs</artifactId> 
+			<version>1.0.0</version> </bundle> -->
 		<bundle>
 			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.i18n</artifactId>
@@ -871,7 +841,7 @@
 		</bundle>
 
 
-    <!-- LiveSense packages -->
+		<!-- LiveSense packages -->
 		<bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.core</artifactId>
@@ -1000,19 +970,21 @@
 
 		<bundle>
 			<groupId>org.liveSense</groupId>
-			<artifactId>org.liveSense.service.solr.configurationLoader</artifactId>
-			<version>${liveSense.service.solr.configurationLoader.version}</version>
+			<artifactId>org.liveSense.service.solr.configurationLoader
+			</artifactId>
+			<version>${liveSense.service.solr.configurationLoader.version}
+			</version>
 		</bundle>
 
 
-	<!--  Configuration load service -->
+		<!-- Configuration load service -->
 		<bundle>
 			<artifactId>org.liveSense.misc.configurationLoader</artifactId>
 			<groupId>org.liveSense</groupId>
 			<version>${liveSense.misc.configurationLoader.version}</version>
 		</bundle>
 
-	<!-- Launchpad initial content -->
+		<!-- Launchpad initial content -->
 		<bundle>
 			<groupId>org.liveSense</groupId>
 			<artifactId>org.liveSense.content.initial</artifactId>
