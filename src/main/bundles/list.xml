@@ -525,6 +525,13 @@
 			<artifactId>org.apache.aries.jmx.whiteboard</artifactId>
 			<version>0.3</version>
 		</bundle>
+        
+        <bundle>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.launchpad.api</artifactId>
+            <version>${sling.launchpad.api.version}</version>
+        </bundle>
+            
 		<bundle>
 			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.launchpad.installer</artifactId>
