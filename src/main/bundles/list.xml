@@ -88,7 +88,11 @@
 			<artifactId>httpclient-osgi</artifactId>
 			<version>4.1.2</version>
 		</bundle>
-
+		<bundle>
+			<groupId>de.twentyeleven.skysail</groupId>
+			<artifactId>org.json-osgi</artifactId>
+			<version>20080701</version>
+		</bundle>
 		<!-- Jasper reports -->
 		<!--
 		<bundle>
@@ -168,6 +172,28 @@
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.cglib</artifactId>
 			<version>2.1_3_4</version>
+		</bundle>
+
+        <!-- Bouncy castle utilities -->
+		<bundle>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk16</artifactId>
+			<version>1.46</version>
+		</bundle>
+		<bundle>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-ext-jdk16</artifactId>
+			<version>1.46</version>
+		</bundle>
+		<bundle>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcmail-jdk16</artifactId>
+			<version>1.46</version>
+		</bundle>
+		<bundle>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bctsp-jdk16</artifactId>
+			<version>1.46</version>
 		</bundle>
 
 
@@ -307,10 +333,102 @@
 			<version>2.0.4</version>
 		</bundle>
 
+        <!-- Lucene packages -->
+        <bundle>
+			<groupId>com.github.livesense</groupId>
+            <artifactId>lucene-core</artifactId>
+			<version>${lucene.version}</version>
+        </bundle>
+        
+        <bundle>
+			<groupId>com.github.livesense</groupId>        
+            <artifactId>lucene-analyzers-common</artifactId>
+			<version>${lucene.version}</version>
+        </bundle>
+        
+        <bundle>
+			<groupId>com.github.livesense</groupId>        
+            <artifactId>lucene-analyzers-icu</artifactId>
+			<version>${lucene.version}</version>
+        </bundle>
+        
+        <bundle>
+			<groupId>com.github.livesense</groupId>        
+            <artifactId>lucene-analyzers-phonetic</artifactId>
+			<version>${lucene.version}</version>
+        </bundle>
+        
+        <bundle>
+			<groupId>com.github.livesense</groupId>
+            <artifactId>lucene-analyzers-stempel</artifactId>
+			<version>${lucene.version}</version>
+        </bundle>
+        
+        <bundle>
+			<groupId>com.github.livesense</groupId>
+            <artifactId>lucene-grouping</artifactId>
+			<version>${lucene.version}</version>
+        </bundle>
+        
+        <bundle>
+			<groupId>com.github.livesense</groupId>        
+            <artifactId>lucene-highlighter</artifactId>
+			<version>${lucene.version}</version>
+        </bundle>
+        
+        <bundle>
+			<groupId>com.github.livesense</groupId>        
+            <artifactId>lucene-memory</artifactId>
+			<version>${lucene.version}</version>
+        </bundle>
+        
+        <bundle>
+			<groupId>com.github.livesense</groupId>        
+            <artifactId>lucene-misc</artifactId>
+			<version>${lucene.version}</version>
+        </bundle>
+        
+        <bundle>
+			<groupId>com.github.livesense</groupId>        
+            <artifactId>lucene-queries</artifactId>
+			<version>${lucene.version}</version>
+        </bundle>
+        
+        <bundle>
+			<groupId>com.github.livesense</groupId>        
+            <artifactId>lucene-queryparser</artifactId>
+			<version>${lucene.version}</version>
+        </bundle>
+        
+        <bundle>
+			<groupId>com.github.livesense</groupId>        
+            <artifactId>lucene-spatial</artifactId>
+			<version>${lucene.version}</version>
+        </bundle>
+        
+        <bundle>
+ 			<groupId>com.github.livesense</groupId>       
+            <artifactId>lucene-suggest</artifactId>
+			<version>${lucene.version}</version>
+        </bundle>
+
+        <!-- For CXF sercvice -->
 		<bundle>
-			<groupId>org.bouncycastle</groupId>
-			<artifactId>bcprov-jdk16</artifactId>
-			<version>1.46</version>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-asl</artifactId>
+			<version>${jackson.version}</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>${jackson.version}</version>
+		</bundle>
+
+		<bundle>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-jaxrs</artifactId>
+			<version>${jackson.version}</version>
 		</bundle>
 
 		<!-- Sling -->
@@ -584,7 +702,6 @@
 			<version>${liveSense.misc.log.config.default.version}</version>
 		</bundle>
 
-
 		<bundle>
 			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.commons.logservice</artifactId>
@@ -701,8 +818,15 @@
 		<bundle>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.apache.felix.webconsole</artifactId>
-			<version>3.1.6</version>
+			<version>4.0.0</version>
 		</bundle>
+
+		<bundle>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.webconsole.plugins.ds</artifactId>
+			<version>1.0.0</version>
+		</bundle>
+
 		<bundle>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.apache.felix.webconsole.plugins.event</artifactId>
@@ -936,6 +1060,27 @@
 
 		<bundle>
 			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.framework.jasperreports</artifactId>
+			<version>${liveSense.framework.jasperreports.version}</version>
+		</bundle>
+
+
+		<bundle>
+			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.framework.solr</artifactId>
+			<version>${liveSense.framework.solr.version}</version>
+		</bundle>
+        
+        <bundle>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.4.4</version>
+        </bundle>
+
+
+
+		<bundle>
+			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.misc.i18n</artifactId>
 			<version>${liveSense.misc.i18n.version}</version>
 		</bundle>
@@ -988,6 +1133,14 @@
 			<version>${liveSense.service.captha.version}</version>
 		</bundle>
 
+		
+		<bundle>
+			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.service.cxf</artifactId>
+			<version>${liveSense.service.cxf.version}</version>
+		</bundle>
+
+
 		<bundle>
 			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.service.dataSourceProvider</artifactId>
@@ -1002,9 +1155,23 @@
 
 		<bundle>
 			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.service.gwt</artifactId>
+			<version>${liveSense.service.gwt.version}</version>
+		</bundle>
+
+		<bundle>
+			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.service.languageSelector</artifactId>
 			<version>${liveSense.service.languageSelector.version}</version>
 		</bundle>
+
+		
+		<bundle>
+			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.service.markdown</artifactId>
+			<version>${liveSense.service.markdown.version}</version>
+		</bundle>
+
 
 		<bundle>
 			<groupId>com.github.livesense</groupId>
@@ -1070,8 +1237,34 @@
 
 		<bundle>
 			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.sample.gwt.notesRequestFactory</artifactId>
+			<version>${liveSense.sample.gwt.notesRequestFactory.version}</version>
+		</bundle>
+
+		
+		<bundle>
+			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.sample.markdown</artifactId>
+			<version>${liveSense.sample.markdown.version}</version>
+		</bundle>
+
+		<bundle>
+			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.sample.simplePortal</artifactId>
 			<version>${liveSense.sample.simplePortal.version}</version>
+		</bundle>
+
+		
+		<bundle>
+			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.sample.solr</artifactId>
+			<version>${liveSense.sample.solr.version}</version>
+		</bundle>
+
+		<bundle>
+			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.sample.webServiceServlet</artifactId>
+			<version>${liveSense.sample.webServiceServlet.version}</version>
 		</bundle>
 
 	</startLevel>
