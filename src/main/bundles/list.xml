@@ -337,79 +337,79 @@
         <bundle>
 			<groupId>com.github.livesense</groupId>
             <artifactId>lucene-core</artifactId>
-			<version>${lucene.version}</version>
+			<version>${liveSense.framework.lucene.version}</version>
         </bundle>
         
         <bundle>
 			<groupId>com.github.livesense</groupId>        
             <artifactId>lucene-analyzers-common</artifactId>
-			<version>${lucene.version}</version>
+			<version>${liveSense.framework.lucene.version}</version>
         </bundle>
         
         <bundle>
 			<groupId>com.github.livesense</groupId>        
             <artifactId>lucene-analyzers-icu</artifactId>
-			<version>${lucene.version}</version>
+			<version>${liveSense.framework.lucene.version}</version>
         </bundle>
         
         <bundle>
 			<groupId>com.github.livesense</groupId>        
             <artifactId>lucene-analyzers-phonetic</artifactId>
-			<version>${lucene.version}</version>
+			<version>${liveSense.framework.lucene.version}</version>
         </bundle>
         
         <bundle>
 			<groupId>com.github.livesense</groupId>
             <artifactId>lucene-analyzers-stempel</artifactId>
-			<version>${lucene.version}</version>
+			<version>${liveSense.framework.lucene.version}</version>
         </bundle>
         
         <bundle>
 			<groupId>com.github.livesense</groupId>
             <artifactId>lucene-grouping</artifactId>
-			<version>${lucene.version}</version>
+			<version>${liveSense.framework.lucene.version}</version>
         </bundle>
         
         <bundle>
 			<groupId>com.github.livesense</groupId>        
             <artifactId>lucene-highlighter</artifactId>
-			<version>${lucene.version}</version>
+			<version>${liveSense.framework.lucene.version}</version>
         </bundle>
         
         <bundle>
 			<groupId>com.github.livesense</groupId>        
             <artifactId>lucene-memory</artifactId>
-			<version>${lucene.version}</version>
+			<version>${liveSense.framework.lucene.version}</version>
         </bundle>
         
         <bundle>
 			<groupId>com.github.livesense</groupId>        
             <artifactId>lucene-misc</artifactId>
-			<version>${lucene.version}</version>
+			<version>${liveSense.framework.lucene.version}</version>
         </bundle>
         
         <bundle>
 			<groupId>com.github.livesense</groupId>        
             <artifactId>lucene-queries</artifactId>
-			<version>${lucene.version}</version>
+			<version>${liveSense.framework.lucene.version}</version>
         </bundle>
         
         <bundle>
 			<groupId>com.github.livesense</groupId>        
             <artifactId>lucene-queryparser</artifactId>
-			<version>${lucene.version}</version>
+			<version>${liveSense.framework.lucene.version}</version>
         </bundle>
         
         <bundle>
 			<groupId>com.github.livesense</groupId>        
             <artifactId>lucene-spatial</artifactId>
-			<version>${lucene.version}</version>
+			<version>${liveSense.framework.lucene.version}</version>
         </bundle>
         
         <bundle>
  			<groupId>com.github.livesense</groupId>       
             <artifactId>lucene-suggest</artifactId>
-			<version>${lucene.version}</version>
+			<version>${liveSense.framework.lucene.version}</version>
         </bundle>
 
         <!-- For CXF sercvice -->
@@ -1240,7 +1240,6 @@
 			<artifactId>org.liveSense.sample.gwt.notesRequestFactory</artifactId>
 			<version>${liveSense.sample.gwt.notesRequestFactory.version}</version>
 		</bundle>
-
 		
 		<bundle>
 			<groupId>com.github.livesense</groupId>
