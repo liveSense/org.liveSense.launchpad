@@ -272,7 +272,26 @@
 			<version>${spring.version}</version>
 		</bundle>
 
-
+		<!-- JSR 303 Bean validation-->
+		<!--  There is a problee with the  Validation.buildDefaultValidatorFactory()
+			This is the J2EE SPI spec-implementation where the implementation classes described
+			in META-INF/service . The problem is in OSGi context the bundles have own claaassloader so
+			the Spec has not seen the implementation's classloader.
+			http://gnodet.blogspot.hu/2008/05/jee-specs-in-osgi.html
+		-->
+		<!-- 
+		<bundle>
+			<groupId>org.apache.servicemix.specs</groupId>
+			<artifactId>org.apache.servicemix.specs.jsr303-api-1.0.0</artifactId>
+			<version>2.1.0</version>
+		</bundle>
+		
+		<bundle>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.hibernate-validator</artifactId>
+			<version>4.1.0.Final_3</version>
+		</bundle>
+		-->
 		<!-- Bundles for activity -->
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
@@ -719,6 +738,12 @@
 
 		<bundle>
 			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.resourceresolver</artifactId>
+			<version>${sling.resourceresolver.version}</version>
+		</bundle>
+
+		<bundle>
+			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.jcr.resource</artifactId>
 			<version>${sling.jcr.resource.version}</version>
 		</bundle>
@@ -926,6 +951,18 @@
 			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.launchpad.installer</artifactId>
 			<version>${sling.launchpad.installer.version}</version>
+		</bundle>
+
+		<bundle>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.installer.api</artifactId>
+			<version>${sling.installer.api.version}</version>
+		</bundle>
+
+		<bundle>
+			<groupId>org.apache.sling</groupId>
+			<artifactId>org.apache.sling.installer.console</artifactId>
+			<version>${sling.installer.console.version}</version>
 		</bundle>
 
 		<bundle>
