@@ -1457,8 +1457,8 @@
 
 		<bundle>
 			<groupId>com.github.livesense</groupId>
-			<artifactId>org.liveSense.service.captha</artifactId>
-			<version>${liveSense.service.captha.version}</version>
+			<artifactId>org.liveSense.service.captcha</artifactId>
+			<version>${liveSense.service.captcha.version}</version>
 		</bundle>
 
 		
