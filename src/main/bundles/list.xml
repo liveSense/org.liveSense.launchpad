@@ -1539,6 +1539,11 @@
 			</version>
 		</bundle>
 
+		<bundle>
+			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.jcr.explorer</artifactId>
+			<version>${liveSense.jcr.explorer.version}</version>
+		</bundle>
 
 		<!-- Configuration load service -->
 		<bundle>
