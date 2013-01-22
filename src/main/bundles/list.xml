@@ -693,7 +693,7 @@
 			<artifactId>org.apache.sling.engine</artifactId>
 			<version>${sling.engine.version}</version>
 		</bundle>
-
+<!--
 		<bundle>
 			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.auth.openid</artifactId>
@@ -705,13 +705,14 @@
 			<artifactId>org.apache.sling.auth.form</artifactId>
 			<version>${sling.auth.form.version}</version>
 		</bundle>
-
+-->
+<!--
 		<bundle>
 			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.auth.selector</artifactId>
 			<version>${sling.auth.selector.version}</version>
 		</bundle>
-
+-->
 		<bundle>
 			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.adapter</artifactId>
@@ -1373,6 +1374,19 @@
 -->
 		<bundle>
 			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.auth.ldap</artifactId>
+			<version>${liveSense.auth.ldap.version}</version>
+		</bundle>
+
+
+		<bundle>
+			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.framework.apacheds</artifactId>
+			<version>${liveSense.framework.apacheds.version}</version>
+		</bundle>
+
+		<bundle>
+			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.framework.gwt</artifactId>
 			<version>${liveSense.framework.gwt.version}</version>
 		</bundle>
@@ -1453,6 +1467,12 @@
 			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.service.activation</artifactId>
 			<version>${liveSense.service.activation.version}</version>
+		</bundle>
+
+		<bundle>
+			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.service.apacheds</artifactId>
+			<version>${liveSense.service.apacheds.version}</version>
 		</bundle>
 
 		<bundle>
