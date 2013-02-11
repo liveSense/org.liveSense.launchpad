@@ -1477,6 +1477,14 @@
 
 		<bundle>
 			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.service.apacheds.configurationLoader
+			</artifactId>
+			<version>${liveSense.service.apacheds.configurationLoader.version}
+			</version>
+		</bundle>
+
+		<bundle>
+			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.service.captcha</artifactId>
 			<version>${liveSense.service.captcha.version}</version>
 		</bundle>
@@ -1493,6 +1501,12 @@
 			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.service.dataSourceProvider</artifactId>
 			<version>${liveSense.service.dataSourceProvider.version}</version>
+		</bundle>
+
+		<bundle>
+			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.service.guacamole</artifactId>
+			<version>${liveSense.service.guacamole.version}</version>
 		</bundle>
 
 		<bundle>
