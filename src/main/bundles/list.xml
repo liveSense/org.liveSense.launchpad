@@ -283,13 +283,13 @@
 			the Spec has not seen the implementation's classloader.
 			http://gnodet.blogspot.hu/2008/05/jee-specs-in-osgi.html
 		-->
-		<!-- 
+		<!--
 		<bundle>
 			<groupId>org.apache.servicemix.specs</groupId>
 			<artifactId>org.apache.servicemix.specs.jsr303-api-1.0.0</artifactId>
 			<version>2.1.0</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.hibernate-validator</artifactId>
@@ -461,7 +461,7 @@
 			<artifactId>jackson-core-asl</artifactId>
 			<version>${jackson.version}</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-mapper-asl</artifactId>
@@ -473,7 +473,7 @@
 			<artifactId>jackson-jaxrs</artifactId>
 			<version>${jackson.version}</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>org.apache.cxf</groupId>
 			<artifactId>cxf-api</artifactId>
@@ -539,32 +539,32 @@
 			<artifactId>cxf-rt-ws-policy</artifactId>
 			<version>2.7.0</version>
 		</bundle>
-		
+
 		<!-- DOSGi -->
 		<!-- For later usaege. There is a major problem
 		with JAX-WS and SCR now, all interface is registered to /
 		-->
-		<!--  
+		<!--
 		<bundle>
 			<groupId>org.apache.cxf.dosgi</groupId>
 			<artifactId>cxf-dosgi-ri-topology-manager</artifactId>
 			<version>1.4-SNAPSHOT</version>
-		</bundle>	
+		</bundle>
 		<bundle>
 			<groupId>org.apache.cxf.dosgi</groupId>
 			<artifactId>cxf-dosgi-ri-dsw-cxf</artifactId>
 			<version>1.4-SNAPSHOT</version>
-		</bundle>	
+		</bundle>
 		<bundle>
 			<groupId>org.apache.cxf.dosgi</groupId>
 			<artifactId>cxf-dosgi-ri-discovery-local</artifactId>
 			<version>1.4-SNAPSHOT</version>
-		</bundle>	
+		</bundle>
 		<bundle>
 			<groupId>org.apache.cxf.dosgi</groupId>
 			<artifactId>cxf-dosgi-ri-discovery-distributed</artifactId>
 			<version>1.4-SNAPSHOT</version>
-		</bundle>	
+		</bundle>
 		-->
 		<!-- Lucene packages -->
 		<bundle>
@@ -632,7 +632,7 @@
 			<artifactId>lucene-suggest</artifactId>
 			<version>${liveSense.framework.lucene.version}</version>
 		</bundle>
-	
+
 		<!-- Sling -->
 		<bundle>
 			<groupId>org.apache.sling</groupId>
@@ -840,7 +840,7 @@
 			<artifactId>xbean-finder</artifactId>
 			<version>3.12</version>
 		</bundle>
-	
+
 		<bundle>
 			<groupId>org.apache.xbean</groupId>
 			<artifactId>xbean-bundleutils</artifactId>
@@ -892,7 +892,7 @@
 			<artifactId>org.apache.aries.quiesce.manager</artifactId>
 			<version>1.0.0</version>
 		</bundle>
-		
+
 		<!--   Transaction manager or wrapper
 		http://zoomsplatter.blogspot.hu/2010/09/apache-aries-jpa-samples.html
 		-->
@@ -1053,7 +1053,7 @@
 		</bundle>
 		-->
 		<!--  Aries defines it in JTA -->
-		<!-- 
+		<!--
 		<bundle>
 			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.fragment.transaction</artifactId>
@@ -1087,7 +1087,7 @@
 			<version>${liveSense.fragment.sun.security.version}</version>
 		</bundle>
 		<!--  ServiceMix defines it -->
-		<!-- 
+		<!--
 		<bundle>
 			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.fragment.javax.jws-jre-1.6</artifactId>
@@ -1101,7 +1101,7 @@
 		</bundle>
 
 		<!-- Geronimo spec is used -->
-		<!-- 
+		<!--
 		<bundle>
 			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.fragment.javax.activation-jre-1.6
@@ -1258,8 +1258,8 @@
 		</bundle>
 		<bundle>
 			<groupId>com.github.livesense</groupId>
-			<artifactId>org.liveSense.fragment.jackrabbit.server.ddl</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<artifactId>org.liveSense.fragment.jackrabbit.server.jaybird.ddl</artifactId>
+			<version>${liveSense.fragment.jackrabbit.server.jaybird.ddl.version}</version>
 		</bundle>
 
 		<bundle>
@@ -1337,7 +1337,7 @@
 			<version>1.0.0</version>
 		</bundle>
 		<bundle>
-			<groupId>org.apache.sling</groupId> 
+			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.extensions.apt.parser</artifactId>
 			<version>2.0.2-incubator</version>
 		</bundle>
@@ -1348,7 +1348,7 @@
 		</bundle>
 		<bundle>
 			<groupId>org.apache.sling</groupId>
-			<artifactId>org.apache.sling.jcr.prefs</artifactId> 
+			<artifactId>org.apache.sling.jcr.prefs</artifactId>
 			<version>1.0.0</version>
 		</bundle>
 		-->
@@ -1365,7 +1365,7 @@
 			<artifactId>org.liveSense.core</artifactId>
 			<version>${liveSense.core.version}</version>
 		</bundle>
-<!-- 
+<!--
 		<bundle>
 			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.framework.cxf</artifactId>
@@ -1489,7 +1489,7 @@
 			<version>${liveSense.service.captcha.version}</version>
 		</bundle>
 
-		
+
 		<bundle>
 			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.service.cxf</artifactId>
@@ -1527,7 +1527,7 @@
 			<version>${liveSense.service.languageSelector.version}</version>
 		</bundle>
 
-		
+
 		<bundle>
 			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.service.markdown</artifactId>
@@ -1595,7 +1595,7 @@
 
 	</startLevel>
 <!-- By default the samples moved a different launchpad -->
-<!-- 
+<!--
 	<startLevel level="20">
 		<bundle>
 			<groupId>com.github.livesense</groupId>
@@ -1608,7 +1608,7 @@
 			<artifactId>org.liveSense.sample.gwt.notesRequestFactory</artifactId>
 			<version>${liveSense.sample.gwt.notesRequestFactory.version}</version>
 		</bundle>
-		
+
 		<bundle>
 			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.sample.markdown</artifactId>
@@ -1621,7 +1621,7 @@
 			<version>${liveSense.sample.simplePortal.version}</version>
 		</bundle>
 
-		
+
 		<bundle>
 			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.sample.solr</artifactId>
