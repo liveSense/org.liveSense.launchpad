@@ -633,6 +633,39 @@
 			<version>${liveSense.framework.lucene.version}</version>
 		</bundle>
 
+
+		<!-- For JODReports -->
+		<bundle>
+			<groupId>xom</groupId>
+			<artifactId>xom</artifactId>
+			<version>1.2.5</version>
+		</bundle>
+	
+		<bundle>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.jaxp-ri</artifactId>
+			<version>1.4.5_1</version>
+		</bundle>
+
+		<bundle>
+			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.framework.jodreports</artifactId>
+			<version>${liveSense.framework.jodreports.version}</version>
+		</bundle>
+
+		<bundle>
+			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.framework.jodconverter</artifactId>
+			<version>${liveSense.framework.jodconverter.version}</version>
+		</bundle>
+
+		<bundle>
+			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.framework.fitnesse</artifactId>
+			<version>${liveSense.framework.fitnesse.version}</version>
+		</bundle>
+
+
 		<!-- Sling -->
 		<bundle>
 			<groupId>org.apache.sling</groupId>
