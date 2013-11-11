@@ -67,6 +67,11 @@
 			<artifactId>commons-dbutils</artifactId>
 			<version>1.4</version>
 		</bundle>
+		<bundle>        
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>1.7.1</version>
+		</bundle>
 		<bundle>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-jexl</artifactId>
@@ -339,6 +344,13 @@
 			<version>2.7.7_4</version>
 		</bundle>
 
+<!--
+		<bundle>
+			<groupId>org.apache.servicemix.bundles</groupId>
+			<artifactId>org.apache.servicemix.bundles.antlr</artifactId>
+			<version>3.5_1</version>
+		</bundle>
+-->
 		<bundle>
 			<groupId>org.apache.servicemix.bundles</groupId>
 			<artifactId>org.apache.servicemix.bundles.asm</artifactId>
@@ -873,12 +885,36 @@
 			<artifactId>groovy-all</artifactId>
 			<version>1.8.2</version>
 		</bundle>
+
+        <bundle>
+            <groupId>org.jruby</groupId>
+            <artifactId>jruby</artifactId>
+            <version>${ruby.version}</version>
+        </bundle>
+            
 		<bundle>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.apache.felix.http.whiteboard</artifactId>
 			<version>2.2.0</version>
 		</bundle>
 
+        <bundle>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.discovery.api</artifactId>
+            <version>${sling.discovery.api.version}</version>
+        </bundle>
+
+        <bundle>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.discovery.api</artifactId>
+            <version>${sling.discovery.api.version}</version>
+        </bundle>
+
+        <bundle>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.inventory</artifactId>
+            <version>1.0.0</version>
+        </bundle>
 
 		<!-- Aries - OSGi blueprint -->
 		<bundle>
@@ -1447,6 +1483,18 @@
 			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.framework.jasperreports</artifactId>
 			<version>${liveSense.framework.jasperreports.version}</version>
+		</bundle>
+
+		<bundle>
+			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.scripting.ruby</artifactId>
+			<version>${liveSense.scripting.ruby.version}</version>
+		</bundle>
+
+		<bundle>
+			<groupId>com.github.livesense</groupId>
+			<artifactId>org.liveSense.framework.wro4j</artifactId>
+			<version>${liveSense.framework.wro4j.version}</version>
 		</bundle>
 
 		<bundle>
