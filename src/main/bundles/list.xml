@@ -680,7 +680,7 @@
 
 		<bundle>
 			<groupId>com.github.livesense</groupId>
-			<artifactId>org.liveSense.framework.jodconverter</artifactId>
+			<artifactId>org.liveSense.framework.jodconverter-osgi</artifactId>
 			<version>${liveSense.framework.jodconverter.version}</version>
 		</bundle>
 
@@ -886,12 +886,13 @@
 			<version>1.8.2</version>
 		</bundle>
 
+<!--
         <bundle>
             <groupId>org.jruby</groupId>
             <artifactId>jruby</artifactId>
             <version>${ruby.version}</version>
         </bundle>
-            
+-->
 		<bundle>
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.apache.felix.http.whiteboard</artifactId>
@@ -1485,12 +1486,13 @@
 			<version>${liveSense.framework.jasperreports.version}</version>
 		</bundle>
 
+<!--
 		<bundle>
 			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.scripting.ruby</artifactId>
 			<version>${liveSense.scripting.ruby.version}</version>
 		</bundle>
-
+-->
 		<bundle>
 			<groupId>com.github.livesense</groupId>
 			<artifactId>org.liveSense.framework.wro4j</artifactId>
