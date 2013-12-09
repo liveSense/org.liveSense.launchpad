@@ -1555,8 +1555,8 @@
 
 		<bundle>
 			<groupId>com.github.livesense</groupId>
-			<artifactId>org.liveSense.scripting.jsp.taglib.json</artifactId>
-			<version>${liveSense.scripting.jsp.taglib.json.version}</version>
+			<artifactId>org.liveSense.scripting.jsp.taglib.jsonatg</artifactId>
+			<version>${liveSense.scripting.jsp.taglib.jsonatg.version}</version>
 		</bundle>
 
 		<bundle>
